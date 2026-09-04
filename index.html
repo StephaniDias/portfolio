@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <script>
+        (function(){
+            try{
+                if(localStorage.getItem("tema") === "claro"){
+                    document.documentElement.setAttribute("data-tema","claro");
+                }
+            }catch(e){}
+        })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="shortcut icon" href="imagens/user.png" type="image/x-icon">
+    <title>Stephani Dias | Desenvolvedora Front-end</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+
+            <div class="controles-cabecalho">
+                <button class="idiomas" id="idioma-port">PT</button>
+                <button class="idiomas" id="idioma-en">EN</button>
+                <button class="btn-tema" id="btn-tema" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+                    <i class="ri-moon-line"></i>
+                </button>
+            </div>
+
+            <section class="logotipo-cabecalho">
+                <h1 class="titulo">Portfólio</h1>
+            </section>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#sobre-mim">Sobre Mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#portfolio">Meus Projetos</a></li>
+                    <li><a href="#formulario"><button>Contato</button></a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-menu-mobile" id="btn-menu-mobile">
+                <i class="fi fi-rr-menu-burger"></i>
+            </div>
+
+            <nav class="menu-mobile" id="menu-mobile">
+                <i class="fi fi-rr-cross"></i>
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#sobre-mim">Sobre Mim</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#portfolio">Meus Projetos</a></li>
+                    <li><a href="#formulario">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="hero">
+            <div class="interface">
+                <div class="img-hero">
+                    <img src="imagens/perfil_2.png" alt="foto da Stephani">
+                </div>
+
+                <div class="txt-hero">
+                    <h1>Olá, eu sou a <span>Stephani Dias :)</span></h1>
+                    <p>Estudante de Análise e Desenvolvimento de Sistemas na Universidade Uninter.</p>
+                    <div class="botoes-hero">
+                        <a href="Curriculo/stephani-dias-cv-estagio-2026.pdf" target="_blank"><button>Download CV</button></a>
+                        <a href="https://wa.me/5511973999086" target="_blank"><button>Entre em Contato</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre-mim" id="sobre-mim">
+            <div class="interface">
+
+                <div class="txt-sobre">
+                    <h1 class="titulo-section">Sobre <span>mim</span></h1>
+                    <p>Com formação em Desenvolvimento para E-commerce pelo SENAI e cursos voltados à área de tecnologia e dados. Possuo conhecimentos em <span> lógica de programação, desenvolvimento web, HTML, CSS, JavaScript, Power BI e visualização de dados</span>, além de experiência em atendimento ao cliente e suporte operacional.
+                    </p>
+
+                    <p>Busco uma oportunidade de estágio em TI para aplicar meus conhecimentos técnicos, aprender na prática e construir uma carreira na área de tecnologia.
+                    Utilizo meu GitHub como espaço para compartilhar minhas criações — de páginas web responsivas a experiências dinâmicas — enquanto sigo explorando novas tecnologias e aprimorando minhas habilidades técnicas. ✨.</p>
+                </div>
+
+                <div class="img-sobre">
+                <img src="imagens/sobre_mim.png" alt="Foto da Stephani">
+            </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="interface">
+                <h1 class="titulo-section">Minhas <span>habilidades</span></h1>
+
+                <div class="skills-categoria">
+                    <h2>Front-end</h2>
+                    <div class="icon-box">
+                        <div class="item">
+                            <i class="devicon-html5-plain"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="item">
+                            <i class="devicon-css3-plain"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="item">
+                            <i class="devicon-javascript-plain"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-categoria">
+                    <h2>Lógica &amp; Versionamento</h2>
+                    <div class="icon-box">
+                        <div class="item">
+                            <i class="ri-brain-line"></i>
+                            <span>Lógica de Programação</span>
+                        </div>
+                        <div class="item">
+                            <i class="devicon-git-plain"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="item">
+                            <i class="devicon-github-plain"></i>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-categoria">
+                    <h2>Dados &amp; Produtividade</h2>
+                    <div class="icon-box">
+                        <div class="item">
+                            <i class="ri-bar-chart-2-line"></i>
+                            <span>Power BI</span>
+                        </div>
+                        <div class="item">
+                            <i class="ri-file-excel-2-line"></i>
+                            <span>Excel (intermediário)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="experiencia" id="experiencia">
+            <div class="interface">
+                <h1 class="titulo-section">Experiência <span>Profissional</span></h1>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Assistente de Suporte de Operações</h3>
+                            <span class="timeline-periodo">2024 – Atual</span>
+                        </div>
+                        <span class="timeline-empresa">Petz</span>
+                        <ul>
+                            <li>Apoio na análise de dados operacionais e indicadores, com uso de Excel e Power BI.</li>
+                            <li>Atendimento e resolução de chamados via sistemas internos (GLPI e Desk Manager), desenvolvendo raciocínio lógico para triagem e direcionamento de problemas.</li>
+                            <li>Revisão e atualização de processos internos, com atenção a organização e documentação.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Atendente de E-commerce</h3>
+                            <span class="timeline-periodo">2023 – 2024</span>
+                        </div>
+                        <span class="timeline-empresa">Petz</span>
+                        <ul>
+                            <li>Atendimento digital ao cliente e suporte a pedidos online por meio de sistemas internos.</li>
+                            <li>Acompanhamento de entregas, contribuindo para a experiência do usuário no ambiente de e-commerce.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Operadora de Caixa</h3>
+                            <span class="timeline-periodo">2022 – 2023</span>
+                        </div>
+                        <span class="timeline-empresa">Petz</span>
+                        <ul>
+                            <li>Atendimento ao público e organização de rotinas operacionais no dia a dia da loja.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Operadora de Caixa</h3>
+                            <span class="timeline-periodo">2019 – 2021</span>
+                        </div>
+                        <span class="timeline-empresa">Pernambucanas</span>
+                        <ul>
+                            <li>Responsável por abertura e fechamento de caixa, venda de cartões e produtos financeiros, e atendimento ao público.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+                <div class="interface">
+                    <h1 class="titulo-section">Meus <span>Projetos</span></h1>
+                    <p>Nesta seção apresento alguns dos projetos que desenvolvi durante meus estudos em desenvolvimento web. Cada projeto representa a aplicação prática dos conhecimentos adquiridos em HTML, CSS e JavaScript, além de demonstrar minha evolução técnica e organização de código.</p>
+                    
+                    <article class="portfolio-container">
+                        
+                        <a href="https://calculadora-imc-tau-lake.vercel.app/" target="_blank">
+                            <div class="portfolio-box projeto1">
+                                <div class="infor-portfolio">Calculadora IMC</div>
+                            </div>
+                        </a>
+
+                        <a href="https://landing-page-food-five.vercel.app/" target="_blank">
+                            <div class="portfolio-box projeto2">
+                                <div class="infor-portfolio">Hamburgueria</div>
+                            </div>
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <div class="portfolio-box projeto3">
+                                <div class="infor-portfolio">Site de Tecnologia</div>
+                            </div>
+                        </a>
+                        <a href="https://challenge-amigo-secreto-six.vercel.app/" target="_blank">
+                            <div class="portfolio-box projeto4">
+                                <div class="infor-portfolio">Amigo Secreto</div>
+                            </div>
+                        </a>
+                        <a href="https://lista-de-tarefas-six-tan.vercel.app/" target="_blank">
+                            <div class="portfolio-box projeto5">
+                                <div class="infor-portfolio">Lista de Tarefas</div>
+                            </div>
+                        </a>
+                        <a href="https://tela-de-login-site-viagens.vercel.app/" target="_blank">
+                            <div class="portfolio-box projeto6">
+                                <div class="infor-portfolio">Tela de Login</div>
+                            </div>
+                        </a>
+
+                    </article>
+                </div>
+            </section>
+
+        <section class="formulario" id="formulario">
+            <div class="interface">
+        <h1 class="titulo-section">Fala <span>Comigo</span></h1>
+
+        <form id="formContato">
+            <input type="text" id="nome" placeholder="Seu nome completo:" required>
+            <input type="email" id="email" placeholder="E-mail:" required>
+            <input type="text" id="celular" placeholder="Celular:" required>
+            <textarea id="mensagem" placeholder="Sua Mensagem:" required></textarea>
+
+            <div class="btn-enviar">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+            </div>
+
+            <div class="icon-container">
+                <a href="mailto:stephanidias22@hotmail.com" class="icon"><i class="ri-mail-line"></i></a>
+                <a href="https://wa.me/5511973999086" target="_blank" class="icon"><i class="ri-phone-line"></i></a>
+                <a href="https://www.linkedin.com/in/stephani-dias/" target="_blank" class="icon"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://github.com/StephaniDias" target="_blank" class="icon"><i class="ri-github-line"></i></a>
+            </div>
+        </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="interface">
+            <div class="logo-footer">
+                <p> &copy Todos os direitos reservados</p>
+            </div>
+    </footer>
+</body>
+        <script src="js/script.js"></script>
+</html>

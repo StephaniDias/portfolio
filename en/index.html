@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        (function(){
+            try{
+                if(localStorage.getItem("tema") === "claro"){
+                    document.documentElement.setAttribute("data-tema","claro");
+                }
+            }catch(e){}
+        })();
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsivo.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css">
+    <link rel="shortcut icon" href="/imagens/user.png" type="image/x-icon">
+    <title>Stephani Dias | Front-end Developer</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+
+            <div class="controles-cabecalho">
+                <button class="idiomas" id="idioma-port">PT</button>
+                <button class="idiomas" id="idioma-en">EN</button>
+                <button class="btn-tema" id="btn-tema" aria-label="Toggle light/dark theme" title="Toggle theme">
+                    <i class="ri-moon-line"></i>
+                </button>
+            </div>
+
+            <section class="logotipo-cabecalho">
+                <h1 class="titulo">Portfólio</h1>
+            </section>
+
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#sobre-mim">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experiencia">Experience</a></li>
+                    <li><a href="#portfolio">My projects</a></li>
+                    <li><a href="#formulario"><button>Contact</button></a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-menu-mobile" id="btn-menu-mobile">
+                <i class="fi fi-rr-menu-burger"></i>
+            </div>
+
+            <nav class="menu-mobile" id="menu-mobile">
+                <i class="fi fi-rr-cross"></i>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#sobre-mim">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experiencia">Experience</a></li>
+                    <li><a href="#portfolio">My Projects</a></li>
+                    <li><a href="#formulario">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero" id="hero">
+            <div class="interface">
+                <div class="img-hero">
+                    <img src="/imagens/perfil_2.png" alt="foto da Stephani">
+                </div>
+
+                <div class="txt-hero">
+                    <h1>Hi, I'm <span>Stephani Dias :)</span></h1>
+                    <p>Student of Systems Analysis and Development at Uninter University.</p>
+                    <div class="botoes-hero">
+                        <a href="/Curriculo/stephani-dias-cv-estagio-2026.pdf" target="_blank"><button>Download CV</button></a>
+                        <a href="https://wa.me/5511973999086" target="_blank"><button>Get in touch</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sobre-mim" id="sobre-mim">
+            <div class="interface">
+
+                <div class="txt-sobre">
+                    <h1 class="titulo-section">About <span>me</span></h1>
+                    <p>I have a degree in E-commerce Development from SENAI and have completed courses in technology and data. I possess knowledge in <span> Programming logic, web development, HTML, CSS, JavaScript, Power BI, and data visualization </span>,In addition to experience in customer service and operational support.
+                    </p>
+
+                    <p>I am looking for an IT internship opportunity to apply my technical knowledge, learn by doing, and build a career in the technology field.
+                    I use my GitHub as a space to share my creations — from responsive web pages to dynamic experiences — while continuing to explore new technologies and improve my technical skills.✨.</p>
+                </div>
+
+                <div class="img-sobre">
+                <img src="/imagens/sobre_mim.png" alt="Foto da Stephani">
+            </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="interface">
+                <h1 class="titulo-section">My <span>skills</span></h1>
+
+                <div class="skills-categoria">
+                    <h2>Front-end</h2>
+                    <div class="icon-box">
+                        <div class="item">
+                            <i class="devicon-html5-plain"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="item">
+                            <i class="devicon-css3-plain"></i>
+                            <span>CSS</span>
+                        </div>
+                        <div class="item">
+                            <i class="devicon-javascript-plain"></i>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-categoria">
+                    <h2>Logic &amp; Version Control</h2>
+                    <div class="icon-box">
+                        <div class="item">
+                            <i class="ri-brain-line"></i>
+                            <span>Programming Logic</span>
+                        </div>
+                        <div class="item">
+                            <i class="devicon-git-plain"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="item">
+                            <i class="devicon-github-plain"></i>
+                            <span>GitHub</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-categoria">
+                    <h2>Data &amp; Productivity</h2>
+                    <div class="icon-box">
+                        <div class="item">
+                            <i class="ri-bar-chart-2-line"></i>
+                            <span>Power BI</span>
+                        </div>
+                        <div class="item">
+                            <i class="ri-file-excel-2-line"></i>
+                            <span>Excel (intermediate)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="experiencia" id="experiencia">
+            <div class="interface">
+                <h1 class="titulo-section">Professional <span>Experience</span></h1>
+
+                <div class="timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Operations Support Assistant</h3>
+                            <span class="timeline-periodo">2024 – Present</span>
+                        </div>
+                        <span class="timeline-empresa">Petz</span>
+                        <ul>
+                            <li>Supported the analysis of operational data and KPIs using Excel and Power BI.</li>
+                            <li>Handled and resolved support tickets through internal systems (GLPI and Desk Manager), building logical reasoning for issue triage and routing.</li>
+                            <li>Reviewed and updated internal processes, with attention to organization and documentation.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>E-commerce Customer Service Agent</h3>
+                            <span class="timeline-periodo">2023 – 2024</span>
+                        </div>
+                        <span class="timeline-empresa">Petz</span>
+                        <ul>
+                            <li>Provided digital customer service and support for online orders through internal systems.</li>
+                            <li>Tracked deliveries, contributing to the user experience in the e-commerce environment.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Cashier</h3>
+                            <span class="timeline-periodo">2022 – 2023</span>
+                        </div>
+                        <span class="timeline-empresa">Petz</span>
+                        <ul>
+                            <li>Provided in-store customer service and organized daily operational routines.</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Cashier</h3>
+                            <span class="timeline-periodo">2019 – 2021</span>
+                        </div>
+                        <span class="timeline-empresa">Pernambucanas</span>
+                        <ul>
+                            <li>Responsible for opening and closing the cash register, selling cards and financial products, and providing customer service.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="portfolio">
+                <div class="interface">
+                    <h1 class="titulo-section">My <span>Projects</span></h1>
+                    <p>In this section I present some of the projects I developed during my web development studies. Each project represents the practical application of the knowledge acquired in HTML, CSS, and JavaScript, as well as demonstrating my technical evolution and code organization.</p>
+                    
+                    <article class="portfolio-container">
+                        
+                        <a href="https://calculadora-imc-tau-lake.vercel.app/" target="_blank">
+                            <div class="portfolio-box projeto1">
+                                <div class="infor-portfolio">BMI calculator</div>
+                            </div>
+                        </a>
+
+                        <a href="https://landing-page-food-five.vercel.app/" target="_blank">
+                            <div class="portfolio-box projeto2">
+                                <div class="infor-portfolio">Burger joint</div>
+                            </div>
+                        </a>
+
+                        <a href="#" target="_blank">
+                            <div class="portfolio-box projeto3">
+                                <div class="infor-portfolio">Technology website</div>
+                            </div>
+                        </a>
+                        <a href="https://challenge-amigo-secreto-six.vercel.app/" target="_blank">
+                            <div class="portfolio-box projeto4">
+                                <div class="infor-portfolio">Amigo Secreto</div>
+                            </div>
+                        </a>
+                        <a href="https://lista-de-tarefas-six-tan.vercel.app/" target="_blank">
+                            <div class="portfolio-box projeto5">
+                                <div class="infor-portfolio">To-do list</div>
+                            </div>
+                        </a>
+                        <a href="https://tela-de-login-site-viagens.vercel.app/" target="_blank">
+                            <div class="portfolio-box projeto6">
+                                <div class="infor-portfolio">Login screen</div>
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="portfolio-box projeto7">
+                                <div class="infor-portfolio">Shortly</div>
+                            </div>
+                        </a>
+                        <a href="#" target="_blank">
+                            <div class="portfolio-box projeto8">
+                                <div class="infor-portfolio">Shortly</div>
+                            </div>
+                        </a>
+
+                    </article>
+                </div>
+            </section>
+
+        <section class="formulario" id="formulario">
+            <div class="interface">
+        <h1 class="titulo-section">Talk <span>to me</span></h1>
+
+        <form id="formContato">
+            <input type="text" id="nome" placeholder="Your full name:" required>
+            <input type="email" id="email" placeholder="E-mail:" required>
+            <input type="text" id="celular" placeholder="Cell phone:" required>
+            <textarea id="mensagem" placeholder="Your message:" required></textarea>
+
+            <div class="btn-enviar">
+                <input type="submit" value="To send">
+            </div>
+        </form>
+            </div>
+
+            <div class="icon-container">
+                <a href="mailto:stephanidias22@hotmail.com" class="icon"><i class="ri-mail-line"></i></a>
+                <a href="https://wa.me/5511973999086" target="_blank" class="icon"><i class="ri-phone-line"></i></a>
+                <a href="https://www.linkedin.com/in/stephani-dias/" target="_blank" class="icon"><i class="ri-linkedin-fill"></i></a>
+                <a href="https://github.com/StephaniDias" target="_blank" class="icon"><i class="ri-github-line"></i></a>
+            </div>
+        </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="interface">
+            <div class="logo-footer">
+                <p> &copy All rights reserved</p>
+            </div>
+    </footer>
+</body>
+        <script src="/js/script.js"></script>
+</html>

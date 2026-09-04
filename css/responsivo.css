@@ -1,0 +1,87 @@
+@media (max-width: 1200px){
+/* Estilo do menu */
+
+.btn-menu-mobile{
+    display: block;
+}
+
+h1.titulo-section{
+    font-size: 3rem;
+    margin-top: 25px;
+}
+    header{
+        background-image: none;
+        background-color: #121B30;
+    }
+    .menu-desktop{
+        display: none;
+    }
+
+    /* Estilo da hero */
+    section.hero{
+    background-image: linear-gradient(180deg, #0B1220 0%, #14204A 60%, var(--azul) 140%);
+}
+
+.hero > .interface{
+    text-align: center;
+    gap: 64px;
+    flex-direction: column-reverse;
+}
+
+.hero .img-hero img{
+    max-width: 400px;
+}
+
+.hero .txt-hero h1{
+    font-size: 2rem;
+}
+
+.hero .txt-hero h1 span{
+    font-size: 2rem;
+}
+
+.hero .txt-hero p {
+    font-size: 1.2rem;
+}
+
+.hero .txt-hero .botoes-hero{
+    justify-content: center;
+}
+
+.hero .txt-hero button{
+    margin-bottom: 10px;
+}
+
+/* Estilo seção sobre mim */
+
+.sobre-mim > .interface{
+    flex-direction: column;
+    gap: 64px;
+}
+
+.sobre-mim .img-sobre img{
+    max-width: 350px;
+}
+
+/* Estilo da seção experiência */
+
+.timeline-header{
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+/* Estilo dos meus projetos */
+
+.portfolio .portfolio-container{
+    grid-template-columns: repeat(1, 4fr);
+}
+
+/* Estilo do rodapé */
+
+footer > .interface{
+    height: 15px;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+}
+}

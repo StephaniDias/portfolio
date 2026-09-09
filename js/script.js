@@ -27,14 +27,14 @@ if (btnPt && btnEn) {
     btnEn.addEventListener("click", () => {
         // Só muda se NÃO estiver no inglês
         if (!window.location.pathname.includes("/en")) {
-            window.location.href = "/en/index.html";
+            window.location.href = new URL("en/index.html", window.location.href).href;;
         }
     });
 
     btnPt.addEventListener("click", () => {
         // Só muda se estiver no inglês
         if (window.location.pathname.includes("/en")) {
-            window.location.href = "/index.html";
+            window.location.href = new URL("../index.html", window.location.href).href;;
         }
     });
 
